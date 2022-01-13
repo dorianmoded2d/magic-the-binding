@@ -1,5 +1,5 @@
 # magic-the-binding
-A fan-made (bootleg) play format to wrap Magic: The Gathering in a ttrpg layer inspired by the style of divination and card readings.
+A fan-made play format to wrap Magic: The Gathering in a ttrpg layer inspired by the style of divination and card readings.
 
 Gameplay elements you can expect:
 =
