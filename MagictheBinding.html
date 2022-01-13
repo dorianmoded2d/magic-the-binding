@@ -1,0 +1,1215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-01-13 Thu 15:03 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Magic: The Binding&#x2013;a bootleg role-playing game</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Dorian Bodine" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Magic: The Binding&#x2013;a bootleg role-playing game</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org4cf1dc7">1. Introduction</a></li>
+<li><a href="#orgd06c412">2. Overview</a>
+<ul>
+<li><a href="#orgbf3854d">2.1. Concepts and Terms</a></li>
+<li><a href="#orgac4960e">2.2. Our Definitions of Color, Color Identity and Color Inclusion</a></li>
+<li><a href="#org0de1b0a">2.3. Reading Cards into Faces</a></li>
+<li><a href="#org91bbd0a">2.4. A Character is Qualities and Lots</a></li>
+<li><a href="#org7dd05d3">2.5. A Plane is Elements and Haunts</a></li>
+<li><a href="#org41e0a00">2.6. A Quest is Roads and Weather</a></li>
+<li><a href="#org2a0f196">2.7. The Life of Wills and Threats</a></li>
+<li><a href="#org87ab4cd">2.8. The Arc of a Game</a></li>
+<li><a href="#org689b0fb">2.9. Things You'll Want To-Hand</a></li>
+</ul>
+</li>
+<li><a href="#org33aadf0">3. The Rules of Play</a>
+<ul>
+<li><a href="#org32fc02d">3.1. Plane Creation</a>
+<ul>
+<li><a href="#orgd2aef6b">3.1.1. Creating an Element</a></li>
+</ul>
+</li>
+<li><a href="#orgd30abb2">3.2. Character Creation</a>
+<ul>
+<li><a href="#org1e924fa">3.2.1. Magician Creation</a></li>
+<li><a href="#orgaed969e">3.2.2. Will and Threat Negotiation</a></li>
+<li><a href="#org04783e9">3.2.3. Opposition Creation</a></li>
+</ul>
+</li>
+<li><a href="#org5ee513e">3.3. Playing a Quest</a>
+<ul>
+<li><a href="#org5a977ed">3.3.1. Setup</a></li>
+<li><a href="#org60493c6">3.3.2. Questing</a></li>
+<li><a href="#org4703fb7">3.3.3. Confrontation</a></li>
+<li><a href="#org0a62093">3.3.4. Resolution</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org73c8cd3">4. An Example of Play</a>
+<ul>
+<li><a href="#org408ff1e">4.1. Plane Creation</a></li>
+<li><a href="#org3bb3c82">4.2. Character Creation</a></li>
+<li><a href="#org537f742">4.3. Choosing a Will</a></li>
+<li><a href="#orgbb0c933">4.4. Walking the Quest</a></li>
+<li><a href="#org7500973">4.5. Confronting the Opposition</a></li>
+<li><a href="#orgd452bbb">4.6. Resolving the Story</a></li>
+</ul>
+</li>
+<li><a href="#org41232b0">5. Closing Words</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4cf1dc7" class="outline-2">
+<h2 id="org4cf1dc7"><span class="section-number-2">1</span> Introduction</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Magic: The Binding unfolds the story of one or more people trying to their world or themselves using a ttrpg format of Magic: the Gathering. This is a fan-made format to use stories created by its players to shape drafting, the command zone, and stakes for each match played.
+</p>
+
+<p>
+A basic familiarity with the M:tG rules of play is assumed, although some common M:tG deckbuilding terms such as set and color identity will be explained here.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd06c412" class="outline-2">
+<h2 id="orgd06c412"><span class="section-number-2">2</span> Overview</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+This format is themed upon the idea of consulting with a diviner upon commiting to a course of action or a project, to better navigate its ups and downs.
+</p>
+</div>
+
+<div id="outline-container-orgbf3854d" class="outline-3">
+<h3 id="orgbf3854d"><span class="section-number-3">2.1</span> Concepts and Terms</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li><i>The Players</i> are each person who comes to play Magic: the Binding, as this term is normally understood in Magic: the Gathering. In addition to those functions, Players are responsible for the story choices which are the subject of play, and may also engage in describing one or more planes as that story's setting.</li>
+<li><i>Relationships</i> are the webs of interaction by which Magic: the Binding casts narrative meaning and tension into the Magic: the Gathering format played to resolve that story.</li>
+<li><i>Cards</i> are the cards of Magic: the Gathering, such that they may be tied to the narrative mechanics of Magic: the Binding.</li>
+<li><i>Faces</i> are how Cards are bonded to particular people, experiences, ideas, locations, things and events which could be known to those within the story, as particular expressions of particular Relationships.</li>
+<li><i>A Character</i> uniquely pairs a Player to a specific collection of specific Cards and Faces currently tied to that Character through Relationships.</li>
+<li><i>Qualities</i> are Faces relating to the internal identity and nature of a Character.</li>
+<li><i>Lots</i> are Faces relating to the external circumstances and bonds of a Character.</li>
+<li><i>Libraries</i> are non-land Cards which are currently tied to a Character but are not tied to a Face in any fixed way.</li>
+<li><i>Fealties</i> are land Cards which are currently promised to a Character for their use by a Place out of respect to a Relationship.</li>
+<li><i>A Magician</i> is a Character who are called to the action which drives this story; Players thereof may also be refered to as "Magicians" or "Magician Players."</li>
+<li><i>The Will</i> is the particular significant change which moves a Magician, or several working together, to act.</li>
+<li><i>The Opposition</i> is the Character which is drawn out of the multiverse by Magician actions to resist their Will.</li>
+<li><i>The Threat</i> is the particular significant change which the Opposition tries to make happen in resistance to the Will.</li>
+<li><i>The Augur</i> is the Player who is paired to the Opposition and responsible for relating parts of the world which are not the Magicians to their Players.</li>
+<li><i>Life</i> is the strength of a Will or a Threat as it presses toward trying to happen.</li>
+<li><i>A Step</i> is an act taken over time by Magicians to bring Life to their Will, and the attendent circumstances of that act.</li>
+<li><i>The Quest</i> is the full set of Steps taken by Magicians to bring Life to their Will.</li>
+<li><i>Places</i> are the Faces of land Cards, whereupon one or more Steps may occur.</li>
+<li><i>Roads</i> are the land Cards which have yet to be associated with a Place, grouped by color identity.</li>
+<li><i>Elements</i> are known and established people, creatures, features, factions, forces, stuff and things, any of which are not Characters but could be tied to Characters.</li>
+<li><i>Weather</i> is the collection of non-land Cards which are not yet tied to a Face, but broadly reflect the kind of time it is here.</li>
+<li><i>A Plane</i> uniquely groups together Places, Roads, Elements and Weather into a coherent world within the multiverse wherein Magicans may act.</li>
+<li><i>Planeswalkers</i> are Characters able to move from one Plane to another in pursuit of the Will or the Threat.</li>
+<li><i>Confontation</i> is the game of Magic played once its circumstances have been established by the Quest.</li>
+<li><i>Rest</i> is the time when the new status quo settles in, where the changes won by the Confrontation are established.</li>
+<li><i>Fealty</i> is support paid to Magicians by Places, earned by the struggles that Magician engaged upon them.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgac4960e" class="outline-3">
+<h3 id="orgac4960e"><span class="section-number-3">2.2</span> Our Definitions of Color, Color Identity and Color Inclusion</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+<i>"While in game play mechanics, the color of a card is always determined exclusively by the colors used in its casting cost or its color indicator (including some color indicators retroactively applied to cards like Ancestral Vision, which previously specified the card's color in the rule text), the color identity of a card is specified by all mana symbols that appear in its casting cost, color indicator, and rules text.</i>
+</p>
+
+<p>
+<i>"For example, while Fires of Undeath is a R card, and Silver Knight has protection from it and White Knight does not. It can't be used by a player who uses Kumano, Master Yamabushi as their General in a game of Commander. This is because the color identity of Fires of Undeath is RB and is not a subset of the color-identity of Kumano (R)."</i>
+&#x2013; mtg.fandom.com/wiki/Color<sub>identity</sub> as retrieved 16 November 2021
+</p>
+
+<p>
+This understanding of "color" and "color identity" is what these terms mean as they appear in these rules.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0de1b0a" class="outline-3">
+<h3 id="org0de1b0a"><span class="section-number-3">2.3</span> Reading Cards into Faces</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+Cards are paired to Faces by an act of interpretation by the Players.
+</p>
+
+<p>
+Every Face must accord with what can be signified by one or more of the following features of its paired Card:
+</p>
+<ul class="org-ul">
+<li>card name</li>
+<li>card art</li>
+<li>flavor text</li>
+</ul>
+
+<p>
+Every Face must also address a subject depending on its Card's type:
+</p>
+<ul class="org-ul">
+<li>Faces paired with Spells&#x2013;that is, Cards which are not creatures nor lands nor artifacts&#x2013;must speak to the topic of "how" or "what" somehow. (E.g. Shock may describe a sudden calamity&#x2013;a "what"&#x2013;or a bracing or violent affect&#x2013;a "how".)</li>
+<li>Faces paired with Creatures&#x2013;Cards which have a power and toughness&#x2013;must speak to the topic of "who" or "where" somehow. (E.g. Ardent Militia may describe that specific band of volunteer watchmen&#x2013;a "who"&#x2013;or the place they live&#x2013;a "where".)</li>
+<li>Faces paired with Artifacts&#x2013;Cards which have the "artifact" type but which are not lands and lack power and toughness of their own&#x2013;must speak to the topic of "who" or "how" or "where" or "what" somehow.</li>
+<li>Places&#x2013;Faces paired with land Cards&#x2013;must speak to the topic of "when" or "why" somehow.</li>
+</ul>
+
+<p>
+Note that the Face paired with a Card can be anything&#x2013;anything in the world can symbolize a given Card&#x2013;so long as a topic required by the current Card's type is addressed by Characters' relations with that Face.
+For example, a weathered sign posted at a crossroads can speak to the people who put it there (Creatures), how it came to be there (Spells), why it is there (Places), a certain time or moment (Places), the kind of spot that this is (Creatures), or what kind of thing is going on there (Spells).
+</p>
+
+<p>
+At every phase of interpretation, either the Augur or a Magician has final say on the reading a Card to a Face.
+</p>
+
+<p>
+Cards are only ever directly experienced by Characters through their Faces, such that a single Face can come to represent an arbitrary number of Cards over time, and such that a single Card can be represented by any number of Faces.
+</p>
+
+<p>
+Major Faces are those tied to non-land non-planeswalker Cards with a converted mana cost (CMC) of 4 or more; minor Faces are those tied to non-land non-planeswalker Cards with a CMC of three or less.
+This distinction between major and minor Faces is important for limiting the Cards tied to a Character's Qualities and the Lots, and it is important to resolving the Will and the Threat at the end of play.
+</p>
+
+<p>
+Players are also recommended to interpret major Faces as being more noticeable than minor Faces in most circumstances, but this bit is only a recommendation&#x2013;not a rule.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org91bbd0a" class="outline-3">
+<h3 id="org91bbd0a"><span class="section-number-3">2.4</span> A Character is Qualities and Lots</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+All Characters have ties to the things which make them themselves, both internally and externally. The internal Relationships are described as their Qualities, which they bring out of themselves into the world; the external Relationships are described as Lots, which move into their lives from the world around them. There are five kinds of Relationships which every Character may have, depending on whether they are Magician or Opposition.
+</p>
+
+<p>
+Magicians have:
+</p>
+<ul class="org-ul">
+<li>a Homeland</li>
+<li>a People</li>
+<li>an Art</li>
+<li>a Spark, if they are a planeswalker</li>
+<li>the Deeds which they have accomplished and which linger on beyond the scope of the other kinds of Magician Relationship.</li>
+</ul>
+<p>
+Magician Relationships always center upon the Magician. That is, a Homeland is where the Magician hails from or lives or is brought up by, a People are who the Magician belongs with or to, an Art is how the Magician works magic, a Spark is how the Magician experiences their planeswalking, and Deeds are specific feats the Magician has accomplished. All of these are explicitly about the Magician.
+</p>
+
+<p>
+Oppositions have:
+</p>
+<ul class="org-ul">
+<li>a Root</li>
+<li>a Constituency</li>
+<li>an Obstruction</li>
+<li>an Eternity, if the Will being opposed is tied to a planeswalker</li>
+<li>the Reaches established beyond the scope of the other kinds of Opposition Relationship.</li>
+</ul>
+<p>
+Opposition Relationships always tie a disparate group of persons and interests together against some Will. That is, a Root is about the thing which disposes the Opposition to take issue with a Will, a Constituency is about who or what is brought together in opposition to a Will, an Obstruction is about how the Opposition may obstruct a Will, an Eternity is about how the Will is resisted across several planes together, and Reaches are the specific Faces of note which are drawn together into the Opposition. All of these are explicitly about what brings together forces to oppose a particular Will.
+</p>
+
+<p>
+Qualities are always to do with how the Character makes sense of its relations to others and its capabilities.
+Lots are always about how the world and the people and beings of it regard the Character and want to relate to it.
+</p>
+
+<p>
+Each Relationship may have up to two Qualities&#x2013;one major and one minor&#x2013;and two Lots&#x2013;one major and one minor&#x2013;tied to it. Every Relationship must have at least one Face tied to it, or there is no longer a Relationship there. A Relationship with a Quality but not a Lot is present in the Character's sense of self but is not exhibited in the world beyond the Magician&#x2013;like an aspiration being strived toward or a loss being mourned. A Relationship with a Lot but not a Quality is like demonstrably having a dog or a friend but not really internalizing that fact of the world.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Magician's Relationship</th>
+<th scope="col" class="org-left">Qualities</th>
+<th scope="col" class="org-left">Lots</th>
+<th scope="col" class="org-left">Opposition's Relationship</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Homeland</td>
+<td class="org-left">M/m</td>
+<td class="org-left">M/m</td>
+<td class="org-left">Root</td>
+</tr>
+
+<tr>
+<td class="org-left">People</td>
+<td class="org-left">M/m</td>
+<td class="org-left">M/m</td>
+<td class="org-left">Constituency</td>
+</tr>
+
+<tr>
+<td class="org-left">Art</td>
+<td class="org-left">M/m</td>
+<td class="org-left">M/m</td>
+<td class="org-left">Obstruction</td>
+</tr>
+
+<tr>
+<td class="org-left">Spark</td>
+<td class="org-left">M/m</td>
+<td class="org-left">M/m</td>
+<td class="org-left">Eternity</td>
+</tr>
+
+<tr>
+<td class="org-left">Deeds</td>
+<td class="org-left">M/m</td>
+<td class="org-left">M/m</td>
+<td class="org-left">Reach</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+A Character's Library is always related to that Character by virtue of being the impressions left upon that Character through their interactions with their broader world, whether those interactions come by outward experience or inward reflection.
+The Cards of Qualities and Lots are always pulled from the Cards already in a Character's Library, as unspecific impressions settle upon and bind to a very specific Face.
+</p>
+
+<p>
+Similarly, a Character's Fealties are always related to them by virtue of the impressions upon that Land left by a Character's acts at that Place. Fealty promised to Character by a Place may be called upon to preserve the Life of a specific Will or Threat they serve, or to lend mana to the works of such a cause in its decisive Confrontation.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7dd05d3" class="outline-3">
+<h3 id="org7dd05d3"><span class="section-number-3">2.5</span> A Plane is Elements and Haunts</h3>
+<div class="outline-text-3" id="text-2-5">
+<p>
+Planes consist of everything about that world which persists across Quests.
+Two things define each Plane: the Elements which populate them and the Haunts where they might be found.
+</p>
+
+<p>
+Elements populate each plane with the people, forces and things which make that plane its own distinct reality. They serve as things which Relations relate to. Each Element is made of three parts: a Disposition, Lore, and a Haunt. All three of these are used by the Augur to populate each Step of the Quest, by the players of Magicians to ground their Characters in the world of a Plane or several Planes, and by all players as lore to inform player understandings and decisions about the world of each Plane. Planes usually do not share or overlap in their Elements, excepting when those Elements are able to planeswalk or otherwise act in a coherent way across more than one Plane.
+</p>
+
+<p>
+Dispositions indicate both the kinds of Will an Element is predisposed to express, and the Roads which connect to their Haunt. If the Element has no Haunt, it will have no Disposition, and vice versa. Dispositions consist of one to three colors. The colors in a Disposition also provide a very loose idea of what constitutes this Element's normal intentions in the world. An Element without a Disposition is the same as an Element with an explicitly colorless Disposition, in that it seems weird, alien and inscrutable to others at large. Ugin's being mysterious, the Eldrazi being alien, and world forces or phenomena like the Roil of Zendikar all function identically in this respect: it is uncertain where, when, why, and sometimes even how such Elements appear in a world or act upon it.
+</p>
+
+<p>
+Haunts are specificly named and described Places which are established in their Faces. An Element is most strongly associated with its Haunt among all Places, and is most expected to be found there in usual circumstances. Elements without Dispositions are also without Haunts, which means they are equally likely to appear at or vanish from any given Place on the Plane which isn't expressly keeping them out. The Roil of Zendikar, the geists of Innistrad and the kami of Kamigawa are prime examples of Elements without Haunts. Contast these with the kor or merfolk of Zendikar, or Innistrad's werewolf packs and vampire courts.
+</p>
+
+<p>
+Lore is the information which seems to describe the Element's presence, past and existence in the world such that the claims that are a part of an Element's Lore are difficult to dispute. This explicitly does not mean that the Lore of any given Element is the truth of that Element, in whole or in part. Rather, Lore is information that does not create new conflicts or confusions when people in the world act like it is true. Similarly, deviating from Lore about an Element is likely to cause confusions and conflicts, not for reasons of truth but for the fact that each Element in the world settles into abiding by the Lore of itself and others as their measure of what is normal in the moment. Every Element has Lore, even if all that Lore amounts to is "no one knows."
+</p>
+
+<p>
+Lore may exist for each Haunt as well, beyond the Element tied to it. This will reflect matters such as contestation, the past of that place, its general usage, and other matters beyond what ties the Haunt to its current Element.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org41e0a00" class="outline-3">
+<h3 id="org41e0a00"><span class="section-number-3">2.6</span> A Quest is Roads and Weather</h3>
+<div class="outline-text-3" id="text-2-6">
+<p>
+Each Quest brings with it its own Cards freshly drafted into each Plane's Roads and Weather.
+All Cards drawn into the Roads and Weather of a Plane for a Quest must come from the sets or collection of cards currently working through that Plane, e.g. the Tarkir block, or "any of the cards in Fred's binders."
+</p>
+
+<p>
+Roads are the land Cards which can be tied to Places connecting and representing the Haunts of a Plane's Elements. Each Plane always has five Roads drawn for it, one for each color, with the requirement that every card in a Road shares color identity with that Road's color. E.g. the Blue Road of a Plane drawing from the Tarkir block can have any Tarkir land in it which has blue in its color identity.
+</p>
+
+<p>
+<i>All Cards tied to the Places in a Plane are drawn from that Plane's Roads during the scope of a specific Quest.</i>
+</p>
+
+<p>
+Haunts have Roads: within them, around them, connecting them to the rest of the Places of the Plane. This means that the land cards used to represent Haunts may vary from Quest to Quest, so long as they share color identity with the Disposition of the Element associated with that Haunt. Haunts may even be represented by multiple land cards, but the Place those land cards represents remains the same; in this case the different land cards are representing different facets of the same Place.
+</p>
+
+<p>
+A Road in a Haunt which happens to be a city might be the literal market street of that Haunt, an alley everyone overlooks, the palace or town hall from which that city is run, the basement of such a complex through which a smuggling ring operates, or anything else which is a Place fit for a Road sharing color identity with that Haunt. Similarly, Roads outside of Haunts can be any kind of Place fitting the color identity of that Road.
+</p>
+
+<p>
+Weather is the rippling-out within a particular Plane of particular patterns within that Plane's cosmic forces, each pattern playing out through the Plane's Faces and Places during a particular Quest. The Weather may be understood as an archetypal abstraction of the kinds of things about to happen in a world, which can in turn become lodged in Magicians as the technical inspirations behind their practical works&#x2013;namely, a Magician's Library.
+</p>
+
+<p>
+Cards of the Weather and the Roads are combined with Cards from the Magician's Library to form the Steps of a Magician's Quest, the Library of the Opposition and the Places which shall add their Cards to every Character's Library when the Confrontation to decide the Quest takes place. See their respective sections to see how this is unfolded during play.
+</p>
+
+<p>
+What these uses of Roads and Weather reflect is that every Quest provides opportunities for meaningful changes to the abilities and imaginations of the Characters (both individuals and groups) beyond what a Will shall deliberately set at stake. There are unknown parts of the world playing out at every moment, whether we are setting out to change the world or setting out to change the laundry, and each one trickles into our lives in ways that are not always obvious as we set about these works.
+Yet our encounters with these can directly affect our imaginings of what the world is and what we can and cannot do within it; this is the part of being a Magician that Roads and Weather are meant to express.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2a0f196" class="outline-3">
+<h3 id="org2a0f196"><span class="section-number-3">2.7</span> The Life of Wills and Threats</h3>
+<div class="outline-text-3" id="text-2-7">
+<p>
+There are five kinds of Will, each corresponding to a color:
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Will</th>
+<th scope="col" class="org-left">Color</th>
+<th scope="col" class="org-left">What It Tries to Do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Keep</td>
+<td class="org-left">White {W}</td>
+<td class="org-left">prevent a Face from changing or revert a change</td>
+</tr>
+
+<tr>
+<td class="org-left">Diminish</td>
+<td class="org-left">Blue {U}</td>
+<td class="org-left">change Card tied to a Face for one with lower CMC</td>
+</tr>
+
+<tr>
+<td class="org-left">End</td>
+<td class="org-left">Black {B}</td>
+<td class="org-left">remove a Face from a Quality or Lot</td>
+</tr>
+
+<tr>
+<td class="org-left">Start</td>
+<td class="org-left">Red {R}</td>
+<td class="org-left">add a Face to a Quality or Lot</td>
+</tr>
+
+<tr>
+<td class="org-left">Grow</td>
+<td class="org-left">Green {G}</td>
+<td class="org-left">change Card tied to a Face for one with higher CMC</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Threats being what Oppositions puts to Magicians to scare them off fulfilling Wills, the structure and color of Threats and Wills are identical.
+</p>
+
+<p>
+Each Will moving Magicians to act, and each Threat reacting to the Wills of Magicians, are therefore this same kind of specialized sentence:
+<i>"{color verb} {one or more target Faces}."</i>
+</p>
+
+<p>
+What the Will tries to act upon are either the Magicians' Lots or their Qualities, but never both. Success means the Magician can change Faces of the kind they picked; failure means the Opposition will dictate changes to the Faces tied to the other kind.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Scope of Change</th>
+<th scope="col" class="org-right">Life Needed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">1 minor Face</td>
+<td class="org-right">20</td>
+</tr>
+
+<tr>
+<td class="org-left">2 minor or 1 major</td>
+<td class="org-right">40</td>
+</tr>
+
+<tr>
+<td class="org-left">3 minor, or 1 major &amp; 1 minor</td>
+<td class="org-right">60</td>
+</tr>
+
+<tr>
+<td class="org-left">4 minor, 2 minor 1 major, or 2 major</td>
+<td class="org-right">80</td>
+</tr>
+
+<tr>
+<td class="org-left">5 minor, 3 minor 2 major, or 2 major 1 minor</td>
+<td class="org-right">100</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org87ab4cd" class="outline-3">
+<h3 id="org87ab4cd"><span class="section-number-3">2.8</span> The Arc of a Game</h3>
+<div class="outline-text-3" id="text-2-8">
+<ol class="org-ol">
+<li>The players determine their roles, the Magicians and the Planes deemed of interest.</li>
+<li>The Magicians determine their Will.</li>
+<li>The Augur determines the Threat.</li>
+<li>The Magicians Quest while the Augur develops the Opposition in response.</li>
+<li>The Magicians Confront the Opposition and they fight as represented by playing a game of Magic.</li>
+<li>A new status quo is determined through Rest after the Confrontation, for good or for ill.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org689b0fb" class="outline-3">
+<h3 id="org689b0fb"><span class="section-number-3">2.9</span> Things You'll Want To-Hand</h3>
+<div class="outline-text-3" id="text-2-9">
+<ul class="org-ul">
+<li>Paper and writing utensils.</li>
+<li>Unique card sleeves and movement coin, for each Character.</li>
+<li>EITHER a <span class="underline">big</span> box of M:tG cards, grouped by color identity and relevant sets, OR supplies making proxy cards, depending on how the Cards to be used will be determined (see Plane Creation and Character Creation, below)</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org33aadf0" class="outline-2">
+<h2 id="org33aadf0"><span class="section-number-2">3</span> The Rules of Play</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+
+<div id="outline-container-org32fc02d" class="outline-3">
+<h3 id="org32fc02d"><span class="section-number-3">3.1</span> Plane Creation</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+Each Plane has two things which must persist from game to game, though they can be changed as a consequence of play:
+</p>
+<ul class="org-ul">
+<li>a list of Elements and their Haunts.</li>
+<li>a list Cards currently available through the Plane&#x2013;this can either be defined as a list of allowed sets and expansions, or by some other collection like a premade cube or "all the cards I have set aside in this drawer."</li>
+</ul>
+
+<p>
+Each Plane also has two things which are expected to change from game to game, though they might persist between games that occur at the same time or in games played limited by the number of cards owned:
+</p>
+<ul class="org-ul">
+<li>the Weather, which is organized as a single stack of all non-land non-planeswalker Cards.</li>
+<li>the five Roads, one for each color, which each consist of land cards including that color in their color identity&#x2013;i.e. all cards in the Blue Road have blue in their color identity.</li>
+</ul>
+
+<p>
+For the convenience of Players discussing the kind of world or worlds you would like to play in, it can help to give each Plane its own name and uniting concept. These are not necessary parts of a Plane&#x2013;and I challenge you to find the name and uniting concept of the world you are in if you disagree&#x2013;but they are useful for conversations among Planeswalkers.
+</p>
+
+<p>
+The steps for creating a Plane are these:
+</p>
+<ul class="org-ul">
+<li>(Optional) Give the Plane a name and a uniting concept that helps shape what it is all about, who peoples it, and so on.</li>
+<li>Define at least 25 Elements of the Plane.</li>
+<li>Choose the pool of Cards from which this Plane's Roads and Weather shall be drawn.
+<ul class="org-ul">
+<li>This must include basic lands, Creatures and Spells</li>
+<li>It may include Artifacts</li>
+<li>It specifically may not include Planeswalkers</li>
+</ul></li>
+</ul>
+
+<p>
+These three steps are given in an un-ordered list because they do not have to be executed in any particular order&#x2013;really, they're just the basic criteria you need to make Characters from that Plane or start a Quest set there.
+</p>
+</div>
+
+<div id="outline-container-orgd2aef6b" class="outline-4">
+<h4 id="orgd2aef6b"><span class="section-number-4">3.1.1</span> Creating an Element</h4>
+<div class="outline-text-4" id="text-3-1-1">
+<p>
+An Element has either two, four or five things:
+</p>
+<ul class="org-ul">
+<li>a name for it</li>
+<li>its Lore</li>
+<li>its Disposition, if any</li>
+<li>its Haunt, if any</li>
+<li>the Lore of its Haunt, if any</li>
+</ul>
+
+<p>
+Each Element in all of its parts is established by a consensus among the Players&#x2013;even Planes established in the main storylines by WotC are taken up by the group of Players to the best of their understanding.
+</p>
+
+<p>
+Essentially, Elements are not exactly the things they describe, but are instead descriptions of how those things fit into Characters' experiences.
+</p>
+
+<p>
+Elements are created as part of Players' creating a Plane, and also in the Resolution step of a Binding game.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd30abb2" class="outline-3">
+<h3 id="orgd30abb2"><span class="section-number-3">3.2</span> Character Creation</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+Creating a Magician and creating their Opposition are very similar, but the Magicians must be made before their Opposition can form.
+</p>
+</div>
+<div id="outline-container-org1e924fa" class="outline-4">
+<h4 id="org1e924fa"><span class="section-number-4">3.2.1</span> Magician Creation</h4>
+<div class="outline-text-4" id="text-3-2-1">
+<p>
+Magician creation amounts to an abbreviated of this Character's backstory.
+It proceeds in the following phases:
+</p>
+<ol class="org-ol">
+<li>Shuffle the Roads and the Weather of their home Plane.</li>
+<li>The Magician Player names three Faces for the Magician's Qualities and two Faces for their Lots. Planeswalkers also choose an additional Face for their Spark, which may be either a Quality or a Lot.</li>
+<li>Choose or create a Place in the Plane for each Face to be tied to (multiple Faces can be tied to the same Place).</li>
+<li>For each Face tied to the Magician:
+<ol class="org-ol">
+<li>Draw one Card from any Road and reveal it.</li>
+<li>Draw 15 Cards from the Weather of their home Plane.
+<ul class="org-ul">
+<li>Exception! If this Face relates to a Planeswalker's Spark, draw these Cards from the Weather of the Plane they walked to, instead of their home Plane.</li>
+</ul></li>
+<li>Reveal one of these Cards and pair it with the current Face in question. Set it in the Relationship Zone.</li>
+<li>Reveal one to three of the remaining Cards drawn from the Weather.</li>
+<li>Total the CMC of all Cards revealled this way.</li>
+<li>Note Fealty from this Place equal to the total CMC of the Cards returned to the Weather, as well as the specific Card drawn from the Road to represent this Place.</li>
+<li>Return all revealled Cards to the bottom of the Road or the Weather from whence they were drawn.</li>
+<li>Add all the remaining Cards to the Library.</li>
+</ol></li>
+<li>The Magician Player names their Magician.</li>
+<li>The Magician Player writes a one-sentence story for each Face tied to their Magician describing how the Magician first met or discovered that Face.</li>
+</ol>
+
+<p>
+That's it! You are ready to select a Will and help the Augur start creating the Opposition.
+</p>
+</div>
+</div>
+<div id="outline-container-orgaed969e" class="outline-4">
+<h4 id="orgaed969e"><span class="section-number-4">3.2.2</span> Will and Threat Negotiation</h4>
+<div class="outline-text-4" id="text-3-2-2">
+<p>
+Will creation is a collaborative decision-making process between the Magician Player(s) which the Augur prompts and loosely facilitates. It proceeds more-or-less in this way:
+</p>
+<ul class="org-ul">
+<li>The Augur reviews the Elements with Dispositions which might, in their view, trouble the Magician(s).</li>
+<li>The Magicians discuss what they want to achieve.</li>
+<li>The Augur helps the Magician Player(s) articulate their goal in the form of a Will statement.</li>
+<li>The Augur helps the Magician(s) name the specific Faces they wish to affect.</li>
+</ul>
+
+<p>
+Once the Will and its target Faces are established, the Augur proposes to the Magician(s) Threats and Faces to be threatened, until a proposed Threat is accepted. The identity of the Opposition may be decided upon by the Augur at this point, who may reveal or withhold the identity chosen for the Opposition at any point of the Quest between this moment and the Confrontation. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org04783e9" class="outline-4">
+<h4 id="org04783e9"><span class="section-number-4">3.2.3</span> Opposition Creation</h4>
+<div class="outline-text-4" id="text-3-2-3">
+<p>
+Opposition creation is a proceeds in the following phases:
+</p>
+<ol class="org-ol">
+<li>Shuffle the Weather of their home Plane.</li>
+<li>The Augur player secretly gives the Opposition one Face for each of its Relationship Qualities and two Lots. If the Opposition can planeswalk, it is given a Spark Face as well.</li>
+<li>The Augur then gives the Opposition a name.</li>
+</ol>
+
+<p>
+That's it! Cards will be added to the Opposition's Library and established Faces from the Weather as the Quest progresses. Additional Faces and Reach may also be secretly assigned as the sequence of Steps progresses.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org5ee513e" class="outline-3">
+<h3 id="org5ee513e"><span class="section-number-3">3.3</span> Playing a Quest</h3>
+<div class="outline-text-3" id="text-3-3">
+</div>
+<div id="outline-container-org5a977ed" class="outline-4">
+<h4 id="org5a977ed"><span class="section-number-4">3.3.1</span> Setup</h4>
+<div class="outline-text-4" id="text-3-3-1">
+<p>
+Setting up the Quest requires:
+</p>
+<ol class="org-ol">
+<li>Preparing the Plane or Planes likely to feature in this Quest.</li>
+<li>Drawing Cards from the Weather of those Planes to fill out the Opposition's initial Qualities and Lots.</li>
+<li>Allocating Influence counters to each Quality and Lot of the Magicians.</li>
+</ol>
+
+<p>
+At a minimum, this requires knowing how many Magicians come together in this Quest. If one or more of the Magicians are Planeswalkers, then each Plane which is hosting one or more Magicians at the start of the Quest must be prepared. Further, unprepared, Planes to which one or more Magicians travel in the course of Questing must be prepared at the moment the Magicians travel to them.
+</p>
+
+<p>
+For each Plane, the Augur prepares the Roads and Weather according to the following steps. The Augur may do so without revealing the Cards selected to the Magicians, though the Augur is encouraged to organize their cards such that they can be shuffled and selected without the Augur seeing them either.
+</p>
+
+<p>
+<i>Example:</i>
+<i>Fred keeps all her Cards for Ravnica's Roads and Weather neatly divided in four sections for each color: basic lands of that color, nonbasic lands which include that color in their color identity, minor Cards which include that color, and major Cards which include that Color. She makes a point to keep Cards evenly representing each Guild of Ravnica in the each of the colors tied to that Guild, so there are about as many blue-green Simic cards in the blue section as there are in the green, and so on. When she needs to Augur a Quest involving Ravnica, she can just shuffle and draw from each subsection if she wants a more draft-like challenge, or she can pick through and curate the Cards selected to make curating the challenge for the Magician Players easier.</i>
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="org7574b68"></a>The Planes<br />
+<ol class="org-ol">
+<li><a id="org7937c0b"></a>Roads<br />
+<div class="outline-text-6" id="text-3-3-1-1-1">
+<p>
+The five Roads of a Plane are constructed in this way:
+</p>
+<ol class="org-ol">
+<li>For each Road in the Plane:
+<ol class="org-ol">
+<li>Collect ten basic land Cards of the color identity matching the Road for every Magician in this Quest as the start of the Road. E.g. the Red Road of a Plane in a Quest with three Magicians starts with thirty Mountains.</li>
+<li>Add five nonbasic land Cards which include the color identity of the Road for every Magician in this Quest. E.g. the Red Road of a Plane in a Quest with three Magicians gets fifteen nonbasic lands that include red in their color identity. (Colorless lands may be included in any Road as nonbasic.)</li>
+<li>Shuffle the Road and place it among the Roads of the Plane.</li>
+</ol></li>
+</ol>
+<p>
+Each Road should consist of fifteen Cards per Magician by the time this is done.
+</p>
+</div>
+</li>
+<li><a id="org40e822f"></a>Weather<br />
+<div class="outline-text-6" id="text-3-3-1-1-2">
+<p>
+The Weather of a Plane is constructed in this way:
+</p>
+<ol class="org-ol">
+<li>For each of the five colors, in any order the Augur feels like:
+<ol class="org-ol">
+<li>Add twelve minor Cards including that color in its identity and six major Cards including that color in its identity to the Weather.</li>
+<li>Flip two coins.</li>
+<li>For each coin that came up heads, add another major Card which has this color in its color identity.</li>
+<li>For each coin that came up tails, add one minor Card which has this color in its color identity.</li>
+</ol></li>
+<li>For each Magician in the Quest:
+<ol class="org-ol">
+<li>The Magician picks one of the five colors.</li>
+<li>Starting with the color selected by the Magician, the Augur:
+<ol class="org-ol">
+<li>Flips two coins.</li>
+<li>Adds one major Card of the color in question to the Weather, if both coins came up heads.</li>
+<li>Adds one minor Card of the color in question to the Weather, if only one coin came up heads.</li>
+<li>Moves clockwise to the next color in the color wheel as printed on the back of M:tG cards, if both coins came up tails.</li>
+<li>Repeats this cycle from 1) to 4) until twenty Cards have been added to the Weather this way.</li>
+</ol></li>
+</ol></li>
+</ol>
+<p>
+The Weather should consist of twenty Cards for every color and twenty cards for every Magician by the time this is done.
+</p>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orged48af0"></a>The Opposition<br />
+<div class="outline-text-5" id="text-3-3-1-2">
+<ol class="org-ol">
+<li>Qualities. For each Relationship of the Opposition, the Augur:
+<ol class="org-ol">
+<li>Selects a Plane.</li>
+<li>Draws five Cards from the Weather of that Plane.</li>
+<li>Places one major Card, one minor Card, or both one major Card AND one minor Card face-down for the Quality of that Relationship.</li>
+<li>Returns the remaining Cards to the bottom of the selected Plane's Weather.</li>
+</ol></li>
+<li>Lots. For each Relationship of the Opposition, the Augur then:
+<ol class="org-ol">
+<li>Selects a Plane.</li>
+<li>Draws five Cards from the Weather of that Plane.</li>
+<li>Places one major Card, one minor Card, or both one major Card AND one minor Card face-down for the Lot of that Relationship.</li>
+<li>Returns the remaining Cards to the bottom of the selected Plane's Weather.</li>
+</ol></li>
+<li>Threat. Set the Life of the Threat to the target Life of the Will.</li>
+</ol>
+</div>
+</li>
+<li><a id="org02faaf9"></a>The Magicians<br />
+<div class="outline-text-5" id="text-3-3-1-3">
+<ol class="org-ol">
+<li>Will. Set the Life of the Will to zero.</li>
+<li>Influence. Give each Quality and Lot of a Magician two Influence counters if it is major and one if it is minor.</li>
+<li>Libraries. Each Magician shuffles their Library.</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org60493c6" class="outline-4">
+<h4 id="org60493c6"><span class="section-number-4">3.3.2</span> Questing</h4>
+<div class="outline-text-4" id="text-3-3-2">
+<p>
+Questing proceeds as the Magicians each take Steps which will establish their personal Front in the Confrontation which will determine the fate of their Quest.
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org320f199"></a>Taking Steps<br />
+<div class="outline-text-5" id="text-3-3-2-1">
+<p>
+Steps proceed this way:
+</p>
+<ol class="org-ol">
+<li>Move. The Magician is moved through a selected Place where something noteworthy to them shall happen, and a Card from a selected Road is drawn to represent that Place. The Place and Road are selected by whomever won this Magician's last Step&#x2013;the Augur or the Magician; the first Step of a Quest is always selected by the Magician.</li>
+<li>Draw. The Magician draws up to a hand of five Cards from their Library. The Augur draws five Cards from the Weather, in addition to any Cards they have left in their hand.</li>
+<li>Flirt. The Augur establishes an appropriate setting and scene in the selected Place at which the Magician notices something, and describes what catches the Magician's attention. The Augur plays one Card appropriate to what catches the Magician's attention, which is added to the Step as the Flirt.</li>
+<li>Answer. The Magician plays one Card from her hand to the Step as her Answer, and describes its appropriate Face as her initial response to the Flirt.</li>
+<li>Exploration (optional). The Magicain expends an Influence counter from one of her Qualities or Lots to play a second Card from her hand, and describes her further engagement with the substance of the Flirt as the Face of this second Card.</li>
+<li>Reflection. The Augur does one of two things:
+<ul class="org-ul">
+<li>Reach. If the Magician did not Explore, the Augur may add two (and only two) face-down Cards, one major and one minor, to the Opposition as a single Reach.</li>
+<li>Reveal. If the Magician Explored, the Augur must choose a Lot or Quality with two face-down Cards, add one to this Step with a description appropriate to the Card, and flip the other Card tied to that Relationship face-up.
+<ul class="org-ul">
+<li>Note that a single face-down Card tied to a Quality cannot be revealed in this manner!</li>
+</ul></li>
+</ul></li>
+<li>Direction. Total the CMC of all Cards played into this Step by the Magician and all Cards played into this Step by the Augur, and compare the two:
+<ul class="org-ul">
+<li>If the Magician's total is equal to or greater than the Augur's total, add the difference to the Life of the Will. The Magician selects the Place and Road for their next Step.</li>
+<li>If the Magician's total is less than the Augur's total, add the difference to the Life of the Threat. The Augur selects the Place and Road for this Magician's next Step.</li>
+</ul></li>
+<li>Tension. Check the current Life totals of the Will and the Threat to determine whether Questing ends.</li>
+<li>If Questing has not ended, move on to the next Step.</li>
+</ol>
+
+<p>
+If there is more than one Magician, each Magician takes their Steps in rounds this way:
+</p>
+<ul class="org-ul">
+<li>The Augur chooses the first Magician who takes their first Step, then the next, then the next, until every Magician has taken their first Step.</li>
+<li>The Augur then chooses the order of which Magician takes the next Step with the same discretion they had in the first round of Steps, i.e. every Magician must take their second Step before a Magician takes a third Step, and so on.</li>
+</ul>
+</div>
+</li>
+<li><a id="org6d27320"></a>Forming the Front<br />
+<div class="outline-text-5" id="text-3-3-2-2">
+<p>
+A Magician's Front is used to track the Steps that Magician has taken in pursuit of the Will. Their Front will also be used to designate the Battlefield for each Magician's interactions with the Opposition in the Confrontation, and to determine the casualties among that Magician's Relationships in the Resolution.
+</p>
+
+<p>
+Each Step is placed in the front in the customary reading order for the Players' common language, such that they can be read as a line between the Magician Player and the Augur Player. For example, among English-speaking Players the rightmost Step is the most recent Step.
+</p>
+
+<p>
+The Front is also useful for tracking how much Life each Magician contributes toward their Will.
+</p>
+</div>
+</li>
+<li><a id="org215245c"></a>How Questing Ends<br />
+<div class="outline-text-5" id="text-3-3-2-3">
+<p>
+Questing ends when one of these things happens:
+</p>
+<ol class="org-ol">
+<li>The Life of the Will now exceeds the Life of the Threat: this starts the Confrontation immediately.</li>
+<li>The Life of the Will now meets the target Life of the Will: this forces each Magician to choose whether or not to start the Confrontation at the end of every Step.</li>
+<li>The Life of the Threat is now greater than twice the target Life of the Will: this immediately bypasses the Confrontation and begins Resolution.</li>
+<li>All Magician Players Concede: this immediately bypasses the Confrontation and begins Resolution.</li>
+<li>A Magician Player runs out of Cards to draw from their Library: this immediately bypasses the Confrontation and begins Resolution.</li>
+</ol>
+
+<p>
+These four cirmstances are always checked for at the end of every Step.
+</p>
+
+<p>
+If the Confrontation starts, whomever was given the choice of Place and Road for this Magician's next Step instead has the choice of whether to draw first or play first in the Conflict.
+</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org4703fb7" class="outline-4">
+<h4 id="org4703fb7"><span class="section-number-4">3.3.3</span> Confrontation</h4>
+<div class="outline-text-4" id="text-3-3-3">
+<p>
+This is a single hand of Magic: the Gathering played with the Cards established for each Character to resolve the contest between the Will and the Threat. The hand is played with the format described below.
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="org74c404c"></a>The Format<br />
+<div class="outline-text-5" id="text-3-3-3-1">
+<ul class="org-ul">
+<li>Each Will has one or more Magician Players who all take each phase of their turns simultaneously, similar to turn-taking in Two-Headed Giant.</li>
+<li>Each Magician has their own Front against the Opposition. Fronts work in this way:
+<ul class="org-ul">
+<li>Each Front of an Opposition has its own hand, battlefield and graveyard.</li>
+<li>Every Front of an Opposition draws its own hand from the same Library.</li>
+<li>The Augur may move any Cards from the hand held at one Front to the hand held at another during the upkeep step of the Opposition's turn.</li>
+<li>The Augur may move any Cards in play from the battlefield of one Front to the battlefield of another during the upkeep step of the Opposition's turn.</li>
+<li>Any cards sent to a graveyard on a Front go either to the Magician's graveyard at that Front or the Opposition's graveyard at that front.</li>
+<li>Magicians of the same Will may move any Cards in play from the battlefield of their Front to the battlefield of another Front during the Magician's upkeep step. The Magician whose Front these Cards move to becomes their controller.</li>
+<li>Magicians may only target hands, battlefields and graveyards present at their own Front.</li>
+<li>The Augur may only target a given Magician's hand, battlefield or graveyards with cards present at that Magician's Front.</li>
+<li>Players may only declare attackers and blockers among Cards present on the same Front.</li>
+<li>Any targeting of a player for matters other than Life, poison counters, or control of a card in play, only targets the Magician or Opposition at that Front, as does any instance of "you" or "your" played by the Magician or Opposition at a Front. E.g. a card that says "you take an extra turn immediately after this one" would give only that Magician or the Opposition at that Front the extra turn.</li>
+<li>Mulligan rules snowball for the Opposition only. That is, if the Augur mulligans the hands of two Fronts, she must first mulligan the hand of one Front for the purposes of reduced starting hand size, and then she can mulligan the second hand.</li>
+</ul></li>
+<li><i>ONCE PER A TURN DURING THE UPKEEP STEP</i> a Magician may spend a Fealty owed them by some Place to add the land Card tied to that Fealty to their Library. Magicians who do this then shuffle their Library.</li>
+<li><i>WHENEVER THE LIFE TOTAL OF THE WILL IS ABOUT TO BE REDUCED TO BELOW 1</i> any Magicians may spend any combination of their Fealties to add the minimum Life needed to keep the Will's Life total above 0, at one Life gained per Fealty spent.</li>
+<li>All Cards tied to a Relationship are placed in a dedicated area for the Character tied to that Relationship, called the Relationship Zone. Relationship Zones work as follows:
+<ul class="org-ul">
+<li>All Cards in the Relationship Zone of a Character may be played from the Reltionship Zone as though they were in the hand of the Player of that Character, though they are not in any Player's hand and are unaffected by spells and abilities which target a hand.</li>
+<li>All Cards played from the Relationship Zone are subject to Commander Tax&#x2013;that is, they cost an extra 2 generic mana to play for each time they are cast from the Relationship Zone after the first.</li>
+<li>The Relationship Zone supercedes the Command Zone and is where all the other things go which would normally use the Command Zone&#x2013;e.g. emblems.</li>
+<li>When the Confrontation starts, all face-down Faces of the Opposition are turned face-up.</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="orgc5b6808"></a>How Confrontations End<br />
+<div class="outline-text-5" id="text-3-3-3-2">
+<p>
+Confrontations end when:
+</p>
+<ol class="org-ol">
+<li>A customary win condition of Magic: the Gathering is achieved, such as reducing the Life total of the opponents to zero.</li>
+<li>Either the Augur or the Magicians concede before that happens, which may be done to prevent the likely outcomes of Resolution from worsening.</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org0a62093" class="outline-4">
+<h4 id="org0a62093"><span class="section-number-4">3.3.4</span> Resolution</h4>
+<div class="outline-text-4" id="text-3-3-4">
+<p>
+The Resolution of a Quest proceeds as follows:
+</p>
+<ol class="org-ol">
+<li>Victory. Changes to Faces are executed as specified by the Will or Threat, based on which side prevailed in the Confrontation.
+<ul class="org-ul">
+<li>If the Confrontation was bypassed, the changes of the Threat are executed.</li>
+</ul></li>
+<li>Fallout. The Magicians coordinate where they will accept their losses together as they each consider what endangered Faces they may preserve with the remaining Life among them. Every Face among a Magician's Qualities or Lots without an Influence counter on it must either:
+<ol class="org-ol">
+<li>Reduce the remaining Life total by its CMC in order to place an Influence counter upon it, if and only if that reduction will not reduce the Life total below 1.</li>
+<li>Dissolve its Face and return its Card to the Magician's Library.</li>
+</ol></li>
+<li>Fealty. Each Magician deconstructs the Steps of their Front, choosing to either:
+<ol class="org-ol">
+<li>Keep the Cards they played at that Step in their Library, or</li>
+<li>Trade the Cards they played at that Step for the Cards played by the Augur there, or</li>
+<li>Sacrifice the Cards they played at that Step for Fealty from that Place in the form of the specific land that represented it.</li>
+</ol></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org73c8cd3" class="outline-2">
+<h2 id="org73c8cd3"><span class="section-number-2">4</span> An Example of Play</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org408ff1e" class="outline-3">
+<h3 id="org408ff1e"><span class="section-number-3">4.1</span> Plane Creation</h3>
+</div>
+<div id="outline-container-org3bb3c82" class="outline-3">
+<h3 id="org3bb3c82"><span class="section-number-3">4.2</span> Character Creation</h3>
+</div>
+<div id="outline-container-org537f742" class="outline-3">
+<h3 id="org537f742"><span class="section-number-3">4.3</span> Choosing a Will</h3>
+</div>
+<div id="outline-container-orgbb0c933" class="outline-3">
+<h3 id="orgbb0c933"><span class="section-number-3">4.4</span> Walking the Quest</h3>
+</div>
+<div id="outline-container-org7500973" class="outline-3">
+<h3 id="org7500973"><span class="section-number-3">4.5</span> Confronting the Opposition</h3>
+</div>
+<div id="outline-container-orgd452bbb" class="outline-3">
+<h3 id="orgd452bbb"><span class="section-number-3">4.6</span> Resolving the Story</h3>
+</div>
+</div>
+
+<div id="outline-container-org41232b0" class="outline-2">
+<h2 id="org41232b0"><span class="section-number-2">5</span> Closing Words</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Dorian Bodine</p>
+<p class="date">Created: 2022-01-13 Thu 15:03</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
