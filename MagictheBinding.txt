@@ -1,7 +1,6 @@
 	    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 	     MAGIC: THE BINDING–A BOOTLEG ROLE-PLAYING GAME
 
-
 			     Dorian Bodine
 	    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -9,44 +8,47 @@
 Table of Contents
 ─────────────────
 
-1 Introduction
-2 Overview
-.. 2.1 Concepts and Terms
-.. 2.2 Our Definitions of Color, Color Identity and Color Inclusion
-.. 2.3 Reading Cards into Faces
-.. 2.4 A Character is Qualities and Lots
-.. 2.5 A Plane is Elements and Haunts
-.. 2.6 A Quest is Roads and Weather
-.. 2.7 The Life of Wills and Threats
-.. 2.8 The Arc of a Game
-.. 2.9 Things You'll Want To-Hand
-3 The Rules of Play
-.. 3.1 Plane Creation
-..... 3.1.1 Creating an Element
-.. 3.2 Character Creation
-..... 3.2.1 Magician Creation
-..... 3.2.2 Will and Threat Negotiation
-..... 3.2.3 Opposition Creation
-.. 3.3 Playing a Quest
-..... 3.3.1 Setup
-..... 3.3.2 Questing
-..... 3.3.3 Confrontation
-..... 3.3.4 Resolution
-4 An Example of Play
-.. 4.1 Plane Creation
-.. 4.2 Character Creation
-.. 4.3 Choosing a Will
-.. 4.4 Walking the Quest
-.. 4.5 Confronting the Opposition
-.. 4.6 Resolving the Story
-5 Closing Words
+1. Introduction
+2. Overview
+.. 1. Concepts and Terms
+.. 2. Our Definitions of Color, Color Identity and Color Inclusion
+.. 3. Reading Cards into Faces
+.. 4. A Character is Qualities and Lots
+.. 5. A Plane is Elements and Haunts
+.. 6. A Quest is Roads and Weather
+.. 7. The Life of Wills and Threats
+.. 8. The Arc of a Game
+.. 9. Things You'll Want To-Hand
+3. The Rules of Play
+.. 1. Plane Creation
+..... 1. Creating an Element
+.. 2. Character Creation
+..... 1. Magician Creation
+..... 2. Will and Threat Negotiation
+..... 3. Opposition Creation
+.. 3. Playing a Quest
+..... 1. Setup
+..... 2. Questing
+..... 3. Confrontation
+..... 4. Resolution
+4. An Example of Play (to be completed)
+.. 1. Plane Creation
+.. 2. Character Creation
+.. 3. Choosing a Will
+.. 4. Walking the Quest
+.. 5. Confronting the Opposition
+.. 6. Resolving the Story
+5. Closing Words
+6. The Legal Bit
+.. 1. This Is Fan Art
+.. 2. Unlicencing
 
 
 1 Introduction
 ══════════════
 
   Magic: The Binding unfolds the story of one or more people trying to
-  their world or themselves using a ttrpg format of Magic: the
+  change their world or themselves using a ttrpg format of Magic: the
   Gathering. This is a fan-made format to use stories created by its
   players to shape drafting, the command zone, and stakes for each match
   played.
@@ -451,7 +453,7 @@ Table of Contents
    2 minor or 1 major                                     40 
    3 minor, or 1 major & 1 minor                          60 
    4 minor, 2 minor 1 major, or 2 major                   80 
-   5 minor, 3 minor 2 major, or 2 major 1 minor          100 
+   5 minor, 3 minor 1 major, or 2 major 1 minor          100 
   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 
@@ -483,9 +485,6 @@ Table of Contents
 
 3 The Rules of Play
 ═══════════════════
-
-
-
 
 3.1 Plane Creation
 ──────────────────
@@ -971,8 +970,8 @@ Table of Contents
         that Place in the form of the specific land that represented it.
 
 
-4 An Example of Play
-════════════════════
+4 An Example of Play (to be completed)
+══════════════════════════════════════
 
 4.1 Plane Creation
 ──────────────────
@@ -1000,3 +999,47 @@ Table of Contents
 
 5 Closing Words
 ═══════════════
+
+
+6 The Legal Bit
+═══════════════
+
+6.1 This Is Fan Art
+───────────────────
+
+  I make, play and release this game for personal benefit as art
+  therapy. I share it with my community at large for the pleasure of
+  sharing it, and seeing what it can become. The sole reward I seek is
+  our wellbeing as a vibrant community.
+
+  And lolz. Lolz measure a lot of that.
+
+
+6.2 Unlicencing
+───────────────
+
+  This is free and unencumbered software released into the public
+  domain.
+
+  Anyone is free to copy, modify, publish, use, compile, sell, or
+  distribute this software, either in source code form or as a compiled
+  binary, for any purpose, commercial or non-commercial, and by any
+  means.
+
+  In jurisdictions that recognize copyright laws, the author or authors
+  of this software dedicate any and all copyright interest in the
+  software to the public domain. We make this dedication for the benefit
+  of the public at large and to the detriment of our heirs and
+  successors. We intend this dedication to be an overt act of
+  relinquishment in perpetuity of all present and future rights to this
+  software under copyright law.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+  IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+  OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+  ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+  OTHER DEALINGS IN THE SOFTWARE.
+
+  For more information, please refer to <https://unlicense.org>
